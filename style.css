@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poltawski Nowy', serif;
+
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	color: #fcfcfc;
+	background-color: #1d3a42;
+}
+
+.header {
+	padding: 100px;
+	width: 60%;
+	margin-left: 10%;
+	padding-bottom: 38px;
+
+}
+
+.header h1 {
+	font-weight: 300;
+	color: rgb(221, 241, 170);
+	margin-bottom: 22px;
+	font-size: 2.5rem;
+}
+
+.header img {
+	width: 123px;
+	height: 97px;
+	margin-bottom: -37px;
+	padding-bottom: 2px;
+}
+
+#task-form {
+	display: flex;
+	;
+}
+
+#task-input {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	background-color: rgb(184, 182, 182);
+	padding: 2%;
+	border-radius: 22px;
+	margin-right: 25px;
+	width: 80%;
+	font-size: 22px;
+
+}
+
+#task-input::placeholder {
+	color: rgb(118, 116, 116);
+}
+
+#task-submit {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	color: rgb(58, 239, 248);
+	width: 15%;
+	border-radius: 30px;
+	font-size: 1.2rem;
+	font-weight: 700;
+	background-color: rgb(14, 19, 20);
+	cursor: pointer;
+
+}
+
+main {
+	width: 62%;
+	margin-left: 17%;
+}
+
+.task-list {
+	padding: 21px;
+}
+
+.task-list h2 {
+	font-size: 25px;
+	font-weight: 300;
+	color: rgb(221, 241, 170);
+	margin-bottom: 1rem;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: #111827;
+	padding: 15px;
+	border-radius: 22px;
+	margin-bottom: 15px;
+
+}
+
+.task .content .text {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	color: white;
+	font-size: 19px;
+	display: block;
+	width: 232%;
+}
+
+.task .actions {
+	display: flex;
+}
+
+.task .actions button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+	margin: 0 25px;
+	font-size: 17px;
+	font-weight: 700;
+	transition: 0.5s;
+}
+
+.task .actions button:hover {
+	opacity: 1;
+
+}
+
+.task .actions .edit {
+	color: #b0ed4f;
+}
+
+.task .actions .delete {
+	color: crimson;
+}
